@@ -30,7 +30,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('jk');
             $table->enum('tes', ['sudah', 'belum'])->default('belum');
-            $table->enum('status', ['diterima','ditolak' , 'belum'])->default('belum');
+            $table->enum('status', ['diterima','ditolak' , 'belum', 'diverifikasi'])->default('belum');
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->text('profile_photo_path')->nullable();

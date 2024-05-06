@@ -14,7 +14,7 @@ class AddColumnToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->enum('status', ['diverifikasi', 'diterima','ditolak' , 'belum'])->default('belum');
+            // $table->enum('status', ['diverifikasi', 'diterima','ditolak' , 'belum'])->default('belum');
             $table->date('tanggal_wawancara')->nullable()->after('tanggal_lahir');
         });
     }

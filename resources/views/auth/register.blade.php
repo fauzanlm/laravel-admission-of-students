@@ -11,7 +11,7 @@
                   </div>
                 </div>
         <x-slot name="logo">
-            
+
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -45,11 +45,11 @@
                                 Perempuan
                             </label>
                         </div> -->
-                        
+
                     </div>
                 </div>
 
-                
+
                     <div class="mt-4 ml-3">
                         <x-jet-label for="tempat_lahir" value="{{ __('Tempat Lahir') }}" />
                         <x-jet-input id="tempat_lahir" class="block mt-1 w-full" type="text" name="tempat_lahir" :value="old('tempat_lahir')" required />
@@ -58,7 +58,7 @@
                         <x-jet-label for="tanggal_lahir" value="{{ __('Tanggal Lahir') }}" />
                         <x-jet-input id="tanggal_lahir" class="block mt-1 w-full" type="date" name="tanggal_lahir" :value="old('tanggal_lahir')" required />
                     </div>
-                
+
             </div>
             <div class="grid grid-cols-2">
                 <div class="mt-4">
@@ -79,19 +79,19 @@
                 </div>
             </div>
 
-            
+
 
             <div class="mt-4">
                 <x-jet-label for="alamat" value="{{ __('Alamat Lengkap') }}" />
                 <textarea name="alamat" id="alamat" rows="3" class="border-gray-300 sm:rounded-md input_textarea mt-1 block w-full" :value="old('alamat')" required></textarea>
             </div>
-            
+
             <div class="grid grid-cols-2">
                 <div class="mt-4">
                     <x-jet-label for="asal_sekolah" value="{{ __('Asal Sekolah') }}" />
                     <x-jet-input id="asal_sekolah" class="block mt-1 w-full" type="text" name="asal_sekolah" :value="old('asal_sekolah')" required />
                 </div>
-                
+
                 <div class="ml-3 mt-4">
                     <x-jet-label for="tahun_lulus" value="{{ __('Tahun Lulus') }}" />
                     <x-jet-input id="tahun_lulus" class="block mt-1 w-full" type="number" name="tahun_lulus" :value="old('tahun_lulus')" required />
@@ -102,7 +102,7 @@
                     <x-jet-label for="email" value="{{ __('Email') }}" />
                     <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
                 </div>
-                
+
                 <div class="mt-4 ml-3">
                     <x-jet-label for="no_hp" value="{{ __('Nomor Hp (Ortu/Siswa)') }}" />
                     <x-jet-input id="no_hp" class="block mt-1 w-full" type="number" name="no_hp" :value="old('no_hp')" required />

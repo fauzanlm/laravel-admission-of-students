@@ -15,6 +15,7 @@ class CreateWawancarasTable extends Migration
     {
         Schema::create('wawancaras', function (Blueprint $table) {
             $table->id();
+            $table->string('id_soal');
             $table->string('nisn')->unique();
             $table->string('pertanyaan1')->nullable();
             $table->string('pertanyaan2')->nullable();
